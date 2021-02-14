@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import {Table} from 'react-bootstrap';
+import './Style.css';
+
+function App()
+{
+  return(
+
+    <div className="main_div">
+      <h1> This is React-BootStap Table</h1>
+
+      <Table variant="dark" size="sm" striped bordered hover>
+        <tr>
+          <th>Sr. No.</th>
+          <th>User Name</th>
+          <th>User Mobile</th>
+          <th>User Age</th>
+        </tr>
+
+        <tr>
+          <td>1.</td>
+          <td>Rutuja</td>
+          <td>7896777576</td>
+          <td>21</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Tanuja</td>
+          <td>8765732893</td>
+          <td>17</td>
+        </tr>
+      </Table>
     </div>
   );
 }
-
 export default App;
+
+
